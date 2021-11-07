@@ -1,0 +1,28 @@
+<html>
+	<body>
+	<div style="color:green;font-size:33px;">
+		<script language="JavaScript">
+		var A = prompt("A=", "");
+		var B = prompt("B=", "");
+		document.write("wcztane liczby: A=" + A + " B=" + B + ""
+			"<br>");
+		var c;
+		var jeden;
+		var szesc;
+		var dwanascie;
+		var osiem;
+		var suma;
+		var a = parseFloat(A);
+		var b = parseFloat(B);
+		c = a + b;
+		suma = jeden + szesc + dwanascie + osiem;
+		jeden = a * a * a;
+		szesc = (c * (a * a)) * b;
+		dwanascie = c * (a * (b * b));
+		osiem = b * b * b;
+		document.write("(" + A + "+" + B + ")^" + c + " = " + A + "^" + c + " + " + c + "*((" + A + ")^(" + B + ")*(" + B + ") + " + c + "*(" + A + ")*((" + B + ")^(" + B + ") + " + B + "^" + c + "=" + jeden + "+" + szesc + "+" + dwanascie + "+" + osiem + " = " + suma + ""
+			"<br>");
+		</script>
+		</div>
+	</body>
+</html>
