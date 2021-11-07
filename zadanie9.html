@@ -1,0 +1,31 @@
+<html>
+	<body>
+	<div style="color:green;font-size:33px;">
+		<script language="JavaScript">
+		var D1_Szy=prompt("D1=","");
+		var D2_Szy=prompt("D2=","");
+		var G1_Szy=prompt("G1=","");
+		var G2_Szy=prompt("G2=","");
+		var suma;
+		var a1;
+		var b1;
+		var suma1;
+		var suma2;
+		
+		
+		var a=parseFloat(D1_Szy);
+		var b=parseFloat(D2_Szy);
+		var c=parseFloat(G1_Szy);
+		var d=parseFloat(G2_Szy);
+		
+		a1=a*24;
+		b1=b*24;
+		suma1=a1+c;
+		suma2=b1+d;
+		suma=suma1-suma2;
+		
+		document.write("ilosc sekund="+a+" dni"+c+" godzin - "+b+" dni"+d+" godzin = "+(suma*3600)+"<br>");
+		</script>
+		</div>
+	</body>
+</html>
