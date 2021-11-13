@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+ <head>
+ <title> Użycie fukcji </title>
+ <meta charset="utf-8">
+ <script language="JavaScript">
+</script>
+ </head>
+ 
+<body>
+
+ <div style="color:navy;font-size:50px;">
+ <script language="JavaScript">
+ var a=parseFloat(prompt("a=",""));
+ var b=parseFloat(prompt("b=",""));
+ function suma_Szy(a, b) {
+ return a + b;
+ }
+ function odejmowanie_Szy(a, b) {
+ return a - b;
+ }
+ function mnozenie_Szy(a, b) {
+ return a * b;
+ }
+ function od_kwadratu_Szy(a, b) {
+ return Math.pow(a,b);
+ return Math.pow(b,a);
+ }
+ function do_kwadratu_Szy(a, b) {
+ return Math.pow(b,a);
+ }
+
+</script>
+<script language="JavaScript">
+document.write("suma="+suma_Szy(a,b)+"<br>");
+</script><br>
+<script language="JavaScript">
+document.write("różnica="+odejmowanie_Szy(a,b)+"<br>");
+</script><br>
+<script language="JavaScript">
+document.write("iloczyn="+mnozenie_Szy(a,b)+"<br>");
+</script><br>
+<script language="JavaScript">
+document.write("do kwadratu="+od_kwadratu_Szy(a,b)+"<br>");
+</script><br>
+<script language="JavaScript">
+document.write("do kwadratu="+do_kwadratu_Szy(a,b)+"<br>");
+</script><br>
+</div>
+</body>
+</html>

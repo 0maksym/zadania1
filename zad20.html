@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>
+Obliczenie pola oraz obwodu trapez równoramiennego
+</title>
+ <script language="JavaScript">
+function Pow_Szy(a,b,h)
+{
+ a_dana_Szy=parseFloat(a)
+ b_dana_Szy=parseFloat(b)
+ h_dana_Szy=parseFloat(h)
+ pole_wynik=(1/2*(a_dana_Szy+b_dana_Szy))*h_dana_Szy
+ document.getElementsByName('ppa')[0].value=pole_wynik.toFixed(2); /* na dokument */
+ alert("Pole="+pole_wynik.toFixed(2)+" cm^2"); /*do okna Alert */
+ wyprowadz_pole_Szy.innerHTML="Pole="+pole_wynik.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+}
+function obw_Szy(a,b,h)
+{
+ a_dana_Szy=parseFloat(a)
+ b_dana_Szy=parseFloat(b)
+ h_dana_Szy=parseFloat(h)
+ x=Math.abs(a-b)
+ g=1/2*x
+ c=Math.pow(g,2)+Math.pow(h,2)
+ c_las=Math.sqrt(c)
+ Obw_wynik=a_dana_Szy+b_dana_Szy+c_Szy+c_Szy
+ document.getElementsByName('obc')[0].value=Obw_wynik.toFixed(2);
+ alert("Obw="+Obw_wynik.toFixed(2)+" cm");
+ wyprowadz_obwod_Szy.innerHTML="Obw="+Obw_wynik.toFixed(2)+"cm";
+}
+ </script>
+ </head>
+<body>
+<script type="text/javascript">
+</script>
+Obliczenie pola oraz obwodu trapez równoramiennego
+<br> <br>
+<form name="formularz" action="..." onsubmit="obw_laskowska(this.wys.value,this.dl.value,this.do.value);
+Pow_laskowska(this.wys.value,this.dl.value,this.do.value);return false">
+Podaj a=
+<input size="6" name="wys">
+Podaj b=
+<input size="6" name="dl">
+Podaj h=
+<input size="6" name="do">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Pp=
+<input size="6" name="ppa">
+Obw=
+<input size="6" name="obc">
+</form>
+<table>
+<tr id="wyprowadz_pole_Szy"></tr>
+<tr id="wyprowadz_obwod_Szy"></tr>
+</table><br>
+</body>
+</html>

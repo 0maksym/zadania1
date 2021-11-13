@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>
+Obliczanie pola i obwodu prostokata
+</title>
+ <script language="JavaScript">
+function Pole_Szy(a,b)
+{
+ a_dana_Szy=parseFloat(a)
+ b_dana_Szy=parseFloat(b)
+ pole_wynik=a_dana_Szy * b_dana_Szy
+ document.getElementsByName('ppa')[0].value=pole_wynik.toFixed(2); /* na dokument */
+ alert("Pole="+pole_wynik.toFixed(2)+" cm^2"); /*do okna Alert */
+ wyprowadz_pole_Szy.innerHTML="Pole="+pole_wynik.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+}
+function obwod_Szy(a,b)
+{
+ a_dana_Szy=parseFloat(a)
+ b_dana_Szy=parseFloat(b)
+ Obw_wynik=a_dana_Szy+b_dana_Szy+a_dana_Szy+b_dana_Szy
+ document.getElementsByName('obc')[0].value=Obw_wynik.toFixed(2);
+ alert("Obw="+Obw_wynik.toFixed(2)+" cm");
+ wyprowadz_obwod_Szy.innerHTML="Obw="+Obw_wynik.toFixed(2)+"cm";
+}
+ </script>
+ </head>
+<body>
+Obliczanie pola i obwodu prostokata
+<br> <br>
+<form name="formularz" action="..." onsubmit="obwod_Szy(this.wys.value,this.dl.value);
+Pole_Szy(this.wys.value,this.dl.value);return false">
+Podaj a=
+<input size="6" name="wys">
+Podaj b=
+<input size="6" name="dl">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Pp=
+<input size="6" name="ppa">
+Obw=
+<input size="6" name="obc">
+</form>
+<table>
+<tr id="wyprowadz_pole_Szy"></tr>
+<tr id="wyprowadz_obwod_Szy"></tr>
+</table><br>
+</body>
+</html>
