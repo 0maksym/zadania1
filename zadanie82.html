@@ -1,0 +1,30 @@
+<html>
+<head>
+<h1 style="color:red;font-size:50px;"> Szymański </h1>
+<title> Zadanie 82</title>
+<script language="JavaScript">
+function pushbutton() {
+alert("Czesc !");}
+</script>
+</head>
+<body>
+<p style="font-size: 15px; color: green;"><br>dzis=new Date()--> Tworzy instancje Date, które pozwalają na pracę z danymi opisującymi datę i czas.<br></p>
+<p style="font-size: 15px; color: green;"><br>dzis=dzis.getHours()--> Zwaraca godzinę określonej daty, stosownie do czasu lokalnego. <br></p>
+<p style="font-size: 15px; color: green;"><br>dzis=dzis.getMinutes()--> Zwraca minuty dla określonej daty w zależności od czasu lokalnego.  <br></p>
+<p style="font-size: 15px; color: green;"><br>dzis=dzis.getMonth()+1--> Zwraca miesiąc dla określonej daty w zależności od czasu lokalnego.  <br></p>
+<p style="font-size: 15px; color: green;"><br>dzis=dzis.getDate()--> Zwraca dzień miesiąca dla określonej daty stosownie do czasu lokalnego. <br></p>
+<p style="font-size: 15px; color: green;"><br>dzis=dzis.getFullYear()--> Zwraca rok określonej daty, stosownie do czasu lokalnego.  <br></p>
+Ostatnio zmodyfikowany
+<script language="LiveScript">
+document.write(document.lastModified,"<br>")
+</script>
+<form>
+<input type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">
+</form>
+<script language="JavaScript">
+dzis = new Date()
+document.write("<br>Aktualny czas : ",dzis.getHours(),":",dzis.getMinutes())
+document.write("<br>Aktualna data : ",dzis.getMonth()+1,",",dzis.getDate(),",",dzis.getFullYear());
+</script>
+</body>
+</html>
